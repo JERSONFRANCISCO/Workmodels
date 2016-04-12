@@ -30,6 +30,7 @@ public class HiloProgres extends Thread {
             i++;
             try {
                 Thread.sleep(19);
+                System.out.println("Hola");
             } catch (InterruptedException ex) {
                 Logger.getLogger(HiloProgres.class.getName()).log(Level.SEVERE, null, ex);
             }
@@ -37,4 +38,5 @@ public class HiloProgres extends Thread {
         c.cerrar();
         JOptionPane.showMessageDialog(Frm_Principal.Jp_informacion, "Proceso Completado");
     }
+    
 }
